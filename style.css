@@ -20,6 +20,7 @@ body{
     font-family: 'Poppins';
     color: var(--Very-Dark-Blue);
     font-size: 0.9em;
+    background: var(--Very-Light-Gray);
 }
 
 .Introheader>p{
@@ -34,7 +35,7 @@ body{
     margin: 0px;
 }
 .item{
-    background: var(--Very-Light-Gray);
+    /* background: var(--Very-Light-Gray); */
     width:25em;
     border-radius: 4px;
     box-shadow: 0px 0px 8px;
