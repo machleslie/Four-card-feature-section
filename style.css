@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;1,300&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+
+    /* ### Primary */
+
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+/* ### Neutral */
+
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+
+body{
+    font-family: 'Poppins';
+    color: var(--Very-Dark-Blue);
+    font-size: 0.9em;
+}
+
+.Introheader>p{
+    font-weight: 200;
+}
+.header1{
+    font-weight: 200;
+    margin: 0px;
+}
+.header2{
+    font-weight: 600;
+    margin: 0px;
+}
+.item{
+    background: var(--Very-Light-Gray);
+    width:25em;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px;
+    border-top: solid 4px;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+}
+svg{
+    align-self: self-end;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+.maincontainer{
+    /* border: solid; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5%;
+
+}
+.side{
+    align-self: center;
+}
+.Introheader{
+    margin: 1em 35%;
+    /* border: solid; */
+    text-align: center;
+}
+.two{
+    justify-self: center;    
+}
+.content{
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 5%;
+}
+.Supervisor{
+    justify-self: end;
+    border-color: var(--Cyan);
+}
+.Team-Builder {
+    margin-bottom: 12%;
+}
+.Team-Builder{
+    border-color: var(--Red);
+}
+.Karma{
+    border-color: var(--Orange);
+}
+.Calculator{
+    border-color: var(--Blue);
+}
+@media screen and (max-width: 768px) {
+    .maincontainer{
+font-size: 8px;       
+    }
+}
+@media screen and (max-width: 426px) {
+    .maincontainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 12%;
+        margin-top: 12%;
+    }
+    .Introheader{
+        margin: 1em 10%;
+    }
+}
